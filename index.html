@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+
+<body>
+  <header>
+    <nav class="flex flex2">
+      <div class="flex">
+        <img src="images/icon-menu.svg" alt="" class="menu" id="menu">
+        <img src="images/icon-close.svg" alt="" class="close2" id="close2">
+        <img src="images/logo.svg" class="logo">
+        <div class="index">
+        <ul class="flex flex3" id="nav">
+          <div class="overlay"></div>
+          <li><a href="">Collections</a></li>
+          <li><a href="">Men</a></li>
+          <li><a href="">Women</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="no" id="number"><p>3</p></div>
+      <div class="avatars flex">
+        <div class="chart">
+        <img src="images/icon-cart.svg"  id="cart">
+      </div>
+        <div class="picture">
+        <img src="images/image-avatar.png" class="profile" id="profile">
+      </div>
+      </div>
+    </nav>
+  </header>
+  
+  <div class="cart-box" id="cart-box">
+    <h3>Cart</h3>
+    <p>Your cart is empty.</p>
+  </div>
+  <div class="cart-box2" id="cart-box2">
+    <h3>Cart</h3>
+    <div class="flex">
+      <img src="images/image-product-1-thumbnail.jpg" class="small">
+      <div class="pricing">
+        <p>Fall Limited Edition Sneakers</p>
+        <p class="up">$125.00 x <span id="number2">3 </span><span class="bold">$375.00</span><span id="del" class="delete"><img src="images/icon-delete.svg"></span></p>
+      </div>
+    </div>
+    <button class="btn">Checkout</button>
+  </div>
+  <main class="flex no-flex">
+  <div class="final" id="final">
+    <div class="overall">
+    <div class="close" id="close">
+      <img src="images/icon-close.svg" onclick="closeModal()">
+    </div>
+    <div class="shoes">
+      <div class="big bigs" id="bigshoes2">
+        <img src="images/image-product-1.jpg" class="big-shoes2" id="big">
+      </div>
+      <div class="big bigs" id="bigshoes2">
+        <img src="images/image-product-2.jpg" class="big-shoes2" id="big">
+      </div>
+      <div class="big bigs" id="bigshoes2">
+        <img src="images/image-product-3.jpg" class="big-shoes2" id="big">
+      </div>
+      <div class="big bigs" id="bigshoes2">
+        <img src="images/image-product-4.jpg" class="big-shoes2" id="big">
+      </div>
+      <div class="flex flex2">
+      <div class="previous" onclick="plusSlides(-1)">
+        <img src="images/icon-previous.svg" >
+      </div>
+      <div class="next" onclick="plusSlides(1)">
+        <img src="images/icon-next.svg" >
+      </div></div>
+      <div class="grid2">
+        <div class="demo">
+        <img src="images/image-product-1-thumbnail.jpg" >
+      </div>
+      <div class="shoe demo">
+        <img src="images/image-product-2-thumbnail.jpg">
+      </div>
+      <div class="shoe demo">
+        <img src="images/image-product-3-thumbnail.jpg">
+      </div>
+      <div class="shoe demo">
+        <img src="images/image-product-4-thumbnail.jpg">
+      </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+    <div class="shoes shoe-box">
+      <div class="big" >
+        <img src="images/image-product-1.jpg" class="big-shoes" id="big2">
+      </div>
+      <div class="grid">
+        <div class="first shoe-image">
+        <img src="images/image-product-1-thumbnail.jpg" onclick="openModal();currentSlide(1)">
+      </div>
+      <div class="shoe-image">
+        <img src="images/image-product-2-thumbnail.jpg" onclick="openModal();currentSlide(2)">
+      </div>
+      <div class="shoe-image">
+        <img src="images/image-product-3-thumbnail.jpg" onclick="openModal();currentSlide(3)">
+      </div>
+      <div class="shoe-image">
+        <img src="images/image-product-4-thumbnail.jpg" onclick="openModal();currentSlide(4)">
+      </div>
+      </div>
+    </div>
+    <div class="company">
+      <h4>SNEAKER COMPANY</h4>
+      <h1>Fall Limited Edition Sneakers</h1>
+      <p class="text">These low-profile sneakers are your perfect casual wear companion. Featuring a
+        durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+        <div class="flex top"><p class="price">$125.00</p><div class="fifty">50%</div> </div>
+      <p class="underline">$250.00</p>
+      <div class="flex no-flex">
+      <div class="flex box">
+        <img src="images/icon-minus.svg" id="minus">
+        <p id="label">0</p>
+        <img src="images/icon-plus.svg" id="plus">
+      </div>
+      <button id="add"><img src="images/icon-cart.svg" class="chart2">
+        Add to cart
+      </button>
+    </div>
+    </div>
+ 
+
+  </main>
+  <!-- script -->
+  <script src="index.js"></script>
+</body>
+
+</html>
